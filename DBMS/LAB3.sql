@@ -1,6 +1,6 @@
 
 -- PART A:
-
+use CSE_3A_103
 --Retrieve all data from table STUDENT. 
 SELECT * FROM student
 
