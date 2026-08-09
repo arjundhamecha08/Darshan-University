@@ -6,18 +6,22 @@ void main(){
 	printf("Enter Number: ");
 	scanf("%d",&n);
 	
-	temp = n;
+	// temp = n;
+	int i;
 	freq = 0;
-	while(n>0){
-		rem1 = n % 10;
+	for(i = 0; i<=9;i++){
+		temp = n;
+		rem1 = 0;
 		while(temp>0){
 			rem2 = temp%10;
-			if(rem1 == rem2){
-				freq++;
+			if(rem2==i){
+				rem1++;
 			}
 			temp = temp/10;
 		}
-		printf("%d numbers frequency: %d\n",rem1,freq);
-		n = n/10;
+		if(rem1>0){
+			freq++;
+			printf("Frequency of %d is %d\n",i,rem1);
+		}
 	}
 }

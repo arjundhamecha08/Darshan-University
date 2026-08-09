@@ -10,7 +10,7 @@ void main(){
 	i=2;
 	int gcd = 1;
 	while(i<min){
-		if(i%num1 == 0 && i%num2 == 0){
+		if(num1%i == 0 && num2%i == 0){
 			gcd = i;
 			break;
 		}
