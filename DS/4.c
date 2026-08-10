@@ -8,20 +8,18 @@ void main(){
 	
 	// temp = n;
 	int i;
-	freq = 0;
 	for(i = 0; i<=9;i++){
 		temp = n;
-		rem1 = 0;
+		freq = 0;
 		while(temp>0){
 			rem2 = temp%10;
 			if(rem2==i){
-				rem1++;
+				freq++;
 			}
 			temp = temp/10;
 		}
-		if(rem1>0){
-			freq++;
-			printf("Frequency of %d is %d\n",i,rem1);
+		if(freq>0){
+			printf("Frequency of %d is %d\n",i,freq);
 		}
 	}
 }

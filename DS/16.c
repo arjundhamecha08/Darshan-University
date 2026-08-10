@@ -30,11 +30,11 @@ void main(){
 		printf("%d",arr[i]);
 	}
 
-	i,j=0;
-	while(i<n1 || j<n2){
-		if(arr[i]<arr[j]){
-			merge_array[i] = 
-		}
-	}
+	// i,j=0;
+	// while(i<n1 || j<n2){
+	// 	if(arr[i]<arr[j]){
+	// 		merge_array[i] = 
+	// 	}
+	// }
 	
 }
