@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 64</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Registration From</legend>
+        <form action="#">
+            <table>
+                <tr>
+                    <td>User Name: </td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" required></td>
+                </tr>
+                <tr>
+                    <td>Phone no.</td>
+                    <td><input type="tel" pattern="[6-9][0-9]{9}" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" pattern="[a-zA-Z@#_-]" maxlength="8" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>
