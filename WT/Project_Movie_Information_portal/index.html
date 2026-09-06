@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Nest</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo"><img src="assets/logo.png" alt="logo"></div>
+        <div id="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Category</a>
+            <a href="#">Favorite Movies</a>
+            <a href="#">Contact Us</a>
+            <div id="search-bar">
+                <input type="text" placeholder="search movie...">
+                <span id="search-icon"><img id="search-icon-img"src="assets/search.png" alt="search"></span>
+            </div>
+            <span id="theme"><img id="theme-img" src="assets/sun.png" alt="theme"></span>
+        </div>
+    </div>
+    <div id="anim-text">
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="left">Welcome to Movie Nest!</marquee>
+    </div>
+    <div id="poster">
+        <img src="assets/poster.png" alt="poster">
+    </div>
+    <h1>High Rated Movies⭐</h1>
+    <div id="high-rated" style="overflow-x: hidden;"></div>
+    </div>
+    <h1>Top Trending Movies🔥</h1>
+
+    <div id="trending">
+    </div>
+
+
+
+
+
+
+    <script src="static/script.js"></script>
+</body>
+</html>
