@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - MovieNest</title>
+
+    <link rel="stylesheet" href="static/style.css">
+
+    <link rel="stylesheet"
+        href="static/tablet.css"
+        media="(min-width: 768px) and (max-width: 1024px)">
+
+    <link rel="stylesheet"
+        href="static/mobile.css"
+        media="(max-width: 767px)">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav id="navbar">
+
+        <div id="logo">
+            <img src="assets/logo.png" alt="MovieNest">
+        </div>
+
+        <div id="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <div id="categoty-menu">
+                <a href="#">Category</a>
+
+                <div id="category-dropdown">
+                    <a href="movies.html">English</a>
+                    <a href="movies.html">Hindi</a>
+                    <a href="movies.html">Gujarati</a>
+                    <a href="movies.html">Marathi</a>
+                    <a href="movies.html">Hindi-Dubbed</a>
+                    <a href="movies.html">South</a>
+                    <a href="movies.html">Telugu</a>
+                    <a href="movies.html">Tamil</a>
+                </div>
+            </div>
+
+            <a href="fav-movies.html">Favorite Movies</a>
+
+            <a href="contact.html">Contact Us</a>
+
+            <div id="account-menu">
+                <a href="#">Account</a>
+
+                <div id="account-dropdown">
+                    <a href="registration.html">Registration</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+
+            <div id="search-bar">
+                <input type="text" placeholder="search movie...">
+
+                <span id="search-icon">
+                    <img id="search-icon-img"
+                        src="assets/search.png"
+                        alt="search">
+                </span>
+            </div>
+
+            <span id="theme">
+                <img id="theme-img"
+                    src="assets/sun.png"
+                    alt="theme">
+            </span>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Contact Section -->
+
+    <div id="contact-page">
+
+        <h1>Contact Us</h1>
+        <div id="contact-content">
+
+            <!-- Contact Form -->
+
+            <div class="contact-box">
+
+                <h2>Contact Us</h2>
+
+                <form id="contact-form">
+
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+
+                        <input type="text"
+                            id="contact-name"
+                            class="form-input"
+                            placeholder="Enter your name"
+                            required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+
+                        <input type="email"
+                            id="contact-email"
+                            class="form-input"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+
+                        <input type="text"
+                            id="contact-subject"
+                            class="form-input"
+                            placeholder="Enter subject"
+                            required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+
+                        <textarea
+                            id="contact-message"
+                            class="form-input"
+                            rows="6"
+                            placeholder="Enter your message"
+                            required></textarea>
+                    </div>
+
+
+                    <button type="submit" class="form-btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Feedback Form -->
+
+            <div class="contact-box">
+
+                <h2>Give Your Feedback</h2>
+
+                <form id="feedback-form">
+
+                    <div class="form-group">
+                        <label for="feedback-name">Name</label>
+
+                        <input type="text"
+                            id="feedback-name"
+                            class="form-input"
+                            placeholder="Enter your name"
+                            required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="feedback-email">Email</label>
+
+                        <input type="email"
+                            id="feedback-email"
+                            class="form-input"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="rating">
+                            Rating
+                        </label>
+
+                        <select id="rating"
+                            class="form-input"
+                            required>
+
+                            <option value="">
+                                Select Rating
+                            </option>
+
+                            <option value="5">
+                                ⭐⭐⭐⭐⭐ Excellent
+                            </option>
+
+                            <option value="4">
+                                ⭐⭐⭐⭐ Very Good
+                            </option>
+
+                            <option value="3">
+                                ⭐⭐⭐ Good
+                            </option>
+
+                            <option value="2">
+                                ⭐⭐ Average
+                            </option>
+
+                            <option value="1">
+                                ⭐ Poor
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="feedback-message">
+                            Feedback
+                        </label>
+
+                        <textarea
+                            id="feedback-message"
+                            class="form-input"
+                            rows="6"
+                            placeholder="Write your feedback..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="form-btn">
+                        Submit Feedback
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <img src="assets/logo.png" alt="MovieNest">
+
+        <p>
+            MovieNest - Your ultimate destination
+            for discovering movies.
+        </p>
+
+    </footer>
+
+
+    <script src="static/script.js"></script>
+
+</body>
+
+</html>

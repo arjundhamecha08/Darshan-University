@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#navbar {
+    width: 100%;
+    height: 65px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-top: 0;
+}
+
+#menu {
+    display: block;
+    font-size: 28px;
+    color: #3730a3;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#logo {
+    float: none;
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 120px;
+    height: 50px;
+}
+
+/* Main navigation */
+
+#nav-links {
+    float: none;
+    width: auto;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: static;
+}
+
+/* Hide menu items */
+
+#nav-links > a,
+#nav-links > #categoty-menu,
+#nav-links > #account-menu {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Search */
+
+#search-bar {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+#search-bar input {
+    width: 180px;
+    height: 36px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+
+#search-bar span {
+    display: flex;
+    align-items: center;
+}
+
+#nav-links #search-bar span img,
+#search-icon-img {
+    width: 23px !important;
+    height: 23px !important;
+    margin-left: 6px !important;
+}
+
+/* Theme */
+
+#theme {
+    display: none;
+}
+
+/* Dropdown */
+
+#category-dropdown,
+#account-dropdown {
+    position: static;
+    width: 100%;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Movie sections */
+
+#trending,
+#high-rated,
+#featured,
+#fev-movies,
+#Movies {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    padding: 15px;
+}
+
+/* Movie cards */
+
+.top {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+}
+
+.top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Genre */
+
+#genre {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    padding: 15px;
+}
+
+.genre {
+    width: 100%;
+    height: 90px;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Movie details */
+
+#movie-details {
+    width: 100%;
+    padding: 20px;
+}
+
+#movie-details img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Forms */
+
+form {
+    width: 90%;
+    margin: auto;
+}
+
+input,
+textarea,
+select {
+    max-width: 100%;
+}
+
+/* Prevent horizontal overflow */
+
+.container,
+section {
+    max-width: 100%;
+}
+
+/* CONTACT PAGE - TABLET */
+
+#contact-page {
+    padding: 20px;
+}
+
+#contact-content {
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-box {
+    padding: 20px;
+}
+
+.contact-box h2 {
+    font-size: 22px;
+}

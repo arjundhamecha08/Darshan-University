@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisration Form</title>
+<link rel="stylesheet" href="static/style.css">
+
+<link rel="stylesheet"
+      href="static/tablet.css"
+      media="(min-width: 768px) and (max-width: 1024px)">
+
+<link rel="stylesheet"
+      href="static/mobile.css"
+      media="(max-width: 767px)">
+<body>
+    <div id="register-container">
+
+    <h2>Join MovieNest</h2>
+    <p>Create your account and start your movie journey.</p>
+
+    <form id="register-form">
+
+        <div class="form-group">
+            <label for="register-name">Full Name</label>
+            <input 
+                type="text" 
+                id="register-name" 
+                class="form-input"
+                placeholder="Enter your full name"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="register-email">Email</label>
+            <input 
+                type="email" 
+                id="register-email"
+                class="form-input"
+                placeholder="Enter your email"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="register-username">Username</label>
+            <input 
+                type="text" 
+                id="register-username"
+                class="form-input"
+                placeholder="Create a username"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="register-password">Password</label>
+            <input 
+                type="password" 
+                id="register-password"
+                class="form-input"
+                placeholder="Create a password"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="register-confirm-password">
+                Confirm Password
+            </label>
+
+            <input 
+                type="password" 
+                id="register-confirm-password"
+                class="form-input"
+                placeholder="Confirm your password"
+                required
+            >
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" id="terms">
+            <label for="terms">
+                I agree to the Terms & Conditions
+            </label>
+        </div>
+
+        <button type="submit" class="form-btn">
+            Create Account
+        </button>
+
+        <p class="form-footer">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+    </form>
+
+</div>
+</body>
+</html>

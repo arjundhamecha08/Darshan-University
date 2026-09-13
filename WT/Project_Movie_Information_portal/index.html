@@ -1,47 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Nest</title>
     <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet"
+      href="static/mobile.css"
+      media="(max-width: 767px)">
+    <link rel="stylesheet"
+      href="static/tablet.css"
+      media="(min-width: 768px) and (max-width: 1024px)">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <div id="navbar">
+
+    <!-- navbar -->
+    <nav id="navbar">
+        <button id="menu">☰</button>
         <div id="logo"><img src="assets/logo.png" alt="logo"></div>
         <div id="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Movies</a>
-            <a href="#">Category</a>
-            <a href="#">Favorite Movies</a>
-            <a href="#">Contact Us</a>
+            <a href="index.html">Home</a>
+            <!-- <a href="#">Movies</a> -->
+            <div id="categoty-menu">
+                <a href="#">Category</a>
+                <div id="category-dropdown">
+                    <a href="movies.html">English</a>
+                    <a href="movies.html">Hindi</a>
+                    <a href="movies.html">Gujarati</a>
+                    <a href="movies.html">Marathi</a>
+                    <a href="movies.html">Hindi-Dubbed</a>
+                    <a href="movies.html">South</a>
+                    <a href="movies.html">Telugu</a>
+                    <a href="movies.html">Tamil</a>
+                </div>
+            </div>
+            <a href="fav-movies.html">Favorite Movies</a>
+            <a href="contact.html">Contact Us</a>
+            <div id="account-menu">
+                <a href="#">Account</a>
+                <div id="account-dropdown">
+                    <a href="registration.html">Registration</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
             <div id="search-bar">
                 <input type="text" placeholder="search movie...">
-                <span id="search-icon"><img id="search-icon-img"src="assets/search.png" alt="search"></span>
+                <span id="search-icon"><img id="search-icon-img" src="assets/search.png" alt="search"></span>
             </div>
             <span id="theme"><img id="theme-img" src="assets/sun.png" alt="theme"></span>
         </div>
-    </div>
-    <div id="anim-text">
-        <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="left">Welcome to Movie Nest!</marquee>
-    </div>
-    <div id="poster">
-        <img src="assets/poster.png" alt="poster">
-    </div>
-    <h1>High Rated Movies⭐</h1>
-    <div id="high-rated" style="overflow-x: hidden;"></div>
-    </div>
-    <h1>Top Trending Movies🔥</h1>
+    
+    </nav>
 
-    <div id="trending">
-    </div>
+    <!-- main Content -->
+    <main>
+        <div id="anim-text">
+            <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="left"> 🎬 Discover
+                Your Next Favorite Movie • Explore • Enjoy • Repeat!</marquee>
+        </div>
+
+        <div id="poster">
+            <img src="assets/poster.png" alt="poster">
+        </div>
+
+        <h1>High Rated Movies⭐</h1>
+        <div id="high-rated" style="height: 100%;"></div>
+        </div>
+
+        <h1>Featured Movies</h1>
+        <div id="featured" style="height: 100%;"></div>
+
+        <h1>Movies By Genre</h1>
+        <div id="genre">
+            <div class="genre">Action</div>
+            <div class="genre">Comedy</div>
+            <div class="genre">Drama</div>
+            <div class="genre">Horror</div>
+            <div class="genre">Science Fiction</div>
+            <div class="genre">Fantacy</div>
+            <div class="genre">Romance</div>
+            <div class="genre">Thriller</div>
+            <div class="genre">Mystery</div>
+            <div class="genre">Western</div>
+            <div class="genre">Animation</div>
+            <div class="genre">Documentary</div>
+        </div>
+
+        <h1>Top Trending Movies🔥</h1>
+        <div id="trending"></div>
 
 
+    </main>
 
+  <footer>
 
+        <img src="assets/logo.png" alt="MovieNest">
+
+        <p>© 2026 Movie Nest. All rights reserved.</p>
+
+    </footer>
 
 
     <script src="static/script.js"></script>
 </body>
+
 </html>

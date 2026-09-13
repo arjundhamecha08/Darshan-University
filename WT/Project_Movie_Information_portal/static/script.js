@@ -1,17 +1,34 @@
 //Theme Button
-let themeImg = document.getElementById("theme-img");
-theme.addEventListener("click", function () {
-    if (themeImg.src.includes("sun.png")) {
-        themeImg.src = "assets/moon.png";
-    } else {
-        themeImg.src = "assets/sun.png";
+document.addEventListener("DOMContentLoaded", () => {
+    let themeImg = document.getElementById("theme-img");
+
+    // Check if the element exists before adding the listener
+    if (themeImg) {
+        themeImg.addEventListener("click", function () {
+            themeImg.src = themeImg.src.includes("sun.png") ? "assets/moon.png" : "assets/sun.png";
+        });
     }
 });
 
+function renderMovies(containerId, movieNames, folderName) {
+    let container = document.getElementById(containerId);
+
+    if (!container) {
+        return;
+    }
+
+    for (let movieName of movieNames) {
+        let movie = document.createElement("div");
+        let image = document.createElement("img");
+        movie.classList.add("top");
+        image.src = `assets/${folderName}/${movieName}`;
+        movie.appendChild(image);
+        container.appendChild(movie);
+    }
+}
 
 // HighRated_Movie
 
-let HighRated = document.getElementById("high-rated");
 let HighRated_Movies = 
 ['The_Shawshank_Redemption.jpg',
     'The_God_Father.jpg',
@@ -20,19 +37,22 @@ let HighRated_Movies =
     'Schindlers_List.jpg'];
 
 
-for (let i = 0; i < HighRated_Movies.length; i++) {
-    let movies = document.createElement("div");
-    let images = document.createElement("img");
-    movies.classList.add("top");
-    images.src = `assets/High_Rated_Movies/${HighRated_Movies[i]}`;
-    movies.appendChild(images);
-    
-HighRated.appendChild(movies);
-}
+renderMovies("high-rated", HighRated_Movies, "High_Rated_Movies");
+
+let Featured_Movies = 
+[
+    'Inception.jpg',
+    'Interstellar.jpg',
+    'The_Dark_Knight.jpg',
+    'The_Shawshank_Redemption.jpg',
+    'Avengers_Endgame.jpg',
+    '3_Idiots.jpg'
+];
+renderMovies("featured", Featured_Movies, "Featured_Movies");
+
 
 //Top Trending Movie
 
-let TopTrending = document.getElementById("trending");
 let TopTrending_Movies =
 [
     'Dhurandhar.jpg',
@@ -46,11 +66,15 @@ let TopTrending_Movies =
     'The_whisper_man.jpg',
 ];
 
-for (let i = 0; i < TopTrending_Movies.length; i++) {
-    let movies = document.createElement("div");
-    let images = document.createElement("img");
-    movies.classList.add("top");
-    images.src = `assets/Top_Trending_Movies/${TopTrending_Movies[i]}`;
-    movies.appendChild(images);
-    TopTrending.appendChild(movies);
-}
+renderMovies("trending", TopTrending_Movies, "Top_Trending_Movies");
+
+//Fav-Movies
+let Fev_Movies = 
+[
+    'animal.jpg'
+];
+renderMovies("fev-movies", Fev_Movies, "Fev_Movies");
+
+//Movies
+let Movies = TopTrending_Movies.concat(Featured_Movies).concat(HighRated_Movies)
+renderMovies("Movies", Movies, "Movies");

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Details - MovieNest</title>
+    <!-- <link rel="stylesheet" href="static/style.css"> -->
+   <link rel="stylesheet" href="static/style.css">
+
+<link rel="stylesheet"
+      href="static/tablet.css"
+      media="(min-width: 768px) and (max-width: 1024px)">
+
+<link rel="stylesheet"
+      href="static/mobile.css"
+      media="(max-width: 767px)">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #EAF0F8;
+            color: #1E293B;
+        }
+        #movie {
+            width: 85%;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            display: flex;
+            gap: 40px;
+        }
+
+        #movie img {
+            width: 280px;
+            border-radius: 10px;
+        }
+
+        #movie h1 {
+            color: #172554;
+            font-size: 40px;
+        }
+
+        #movie p {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #475569;
+        }
+
+        #rating {
+            color: #F59E0B;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #2563EB;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4F46E5;
+        }
+
+        #reviews {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        #reviews h2 {
+            text-align: center;
+            color: #3730A3;
+            font-size: 32px;
+        }
+
+        #review-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            margin-bottom: 18px;
+            box-sizing: border-box;
+            border: 1px solid #CBD5E1;
+            border-radius: 8px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        .review {
+            background-color: #F8FAFC;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: white;
+            padding: 30px 50px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        footer img {
+            width: 180px;
+        }
+
+        /* @media (max-width: 700px) {
+            #movie {
+                flex-direction: column;
+            }
+
+            #movie img {
+                width: 220px;
+            }
+
+            .navbar {
+                flex-wrap: wrap;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <section id="movie">
+
+        <div>
+            <img src="assets/animal.jpg" alt="Animal">
+        </div>
+
+        <div>
+
+            <h1>Animal</h1>
+
+            <p id="rating">★★★★★ 4.5/5</p>
+
+            <p><b>Genre:</b> Action, Drama</p>
+
+            <p><b>Year:</b> 2023</p>
+
+            <p><b>Language:</b> Hindi</p>
+
+            <p><b>Duration:</b> 3h 24min</p>
+
+            <p><b>Director:</b> Sandeep Reddy Vanga</p>
+
+            <p><b>Cast:</b> Ranbir Kapoor, Anil Kapoor, Rashmika Mandanna</p>
+
+            <p>
+                Animal is an action drama movie that follows the complicated
+                relationship between a son and his father.
+            </p>
+
+            <button>Add to Favorites</button>
+            <button>Watch Trailer</button>
+
+        </div>
+
+    </section>
+
+
+    <section id="reviews">
+
+        <h2>Reviews & Ratings</h2>
+
+        <div id="review-box">
+
+            <h3>Write a Review</h3>
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Rating</label>
+            <select>
+                <option>5 Stars</option>
+                <option>4 Stars</option>
+                <option>3 Stars</option>
+                <option>2 Stars</option>
+                <option>1 Star</option>
+            </select>
+
+            <label>Review</label>
+            <textarea placeholder="Write your review"></textarea>
+
+            <button>Submit Review</button>
+
+
+            <h3>Latest Reviews</h3>
+
+            <div class="review">
+                <b>Rahul</b>
+                <p>★★★★★</p>
+                <p>Great movie. The acting was really good.</p>
+            </div>
+
+            <div class="review">
+                <b>Jay</b>
+                <p>★★★★☆</p>
+                <p>Good action and story. Worth watching.</p>
+            </div>
+
+            <div class="review">
+                <b>Priya</b>
+                <p>★★★★☆</p>
+                <p>I enjoyed the movie and the performances.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <img src="assets/logo.png" alt="MovieNest">
+
+        <p>© 2026 Movie Nest. All rights reserved.</p>
+
+    </footer>
+
+</body>
+</html>
