@@ -1,269 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contact Us - MovieNest</title>
-
-    <link rel="stylesheet" href="static/style.css">
-
-    <link rel="stylesheet"
-        href="static/tablet.css"
-        media="(min-width: 768px) and (max-width: 1024px)">
-
-    <link rel="stylesheet"
-        href="static/mobile.css"
-        media="(max-width: 767px)">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us — MovieNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/custom.css">
+    
 </head>
-
-<body>
-
-    <!-- Navbar -->
-
-    <nav id="navbar">
-
-        <div id="logo">
-            <img src="assets/logo.png" alt="MovieNest">
-        </div>
-
-        <div id="nav-links">
-
-            <a href="index.html">Home</a>
-
-            <div id="categoty-menu">
-                <a href="#">Category</a>
-
-                <div id="category-dropdown">
-                    <a href="movies.html">English</a>
-                    <a href="movies.html">Hindi</a>
-                    <a href="movies.html">Gujarati</a>
-                    <a href="movies.html">Marathi</a>
-                    <a href="movies.html">Hindi-Dubbed</a>
-                    <a href="movies.html">South</a>
-                    <a href="movies.html">Telugu</a>
-                    <a href="movies.html">Tamil</a>
-                </div>
-            </div>
-
-            <a href="fav-movies.html">Favorite Movies</a>
-
-            <a href="contact.html">Contact Us</a>
-
-            <div id="account-menu">
-                <a href="#">Account</a>
-
-                <div id="account-dropdown">
-                    <a href="registration.html">Registration</a>
-                    <a href="login.html">Login</a>
-                </div>
-            </div>
-
-            <div id="search-bar">
-                <input type="text" placeholder="search movie...">
-
-                <span id="search-icon">
-                    <img id="search-icon-img"
-                        src="assets/search.png"
-                        alt="search">
-                </span>
-            </div>
-
-            <span id="theme">
-                <img id="theme-img"
-                    src="assets/sun.png"
-                    alt="theme">
-            </span>
-
-        </div>
-
-    </nav>
-
-
-    <!-- Contact Section -->
-
-    <div id="contact-page">
-
-        <h1>Contact Us</h1>
-        <div id="contact-content">
-
-            <!-- Contact Form -->
-
-            <div class="contact-box">
-
-                <h2>Contact Us</h2>
-
-                <form id="contact-form">
-
-                    <div class="form-group">
-                        <label for="contact-name">Name</label>
-
-                        <input type="text"
-                            id="contact-name"
-                            class="form-input"
-                            placeholder="Enter your name"
-                            required>
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="contact-email">Email</label>
-
-                        <input type="email"
-                            id="contact-email"
-                            class="form-input"
-                            placeholder="Enter your email"
-                            required>
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="contact-subject">Subject</label>
-
-                        <input type="text"
-                            id="contact-subject"
-                            class="form-input"
-                            placeholder="Enter subject"
-                            required>
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="contact-message">Message</label>
-
-                        <textarea
-                            id="contact-message"
-                            class="form-input"
-                            rows="6"
-                            placeholder="Enter your message"
-                            required></textarea>
-                    </div>
-
-
-                    <button type="submit" class="form-btn">
-                        Send Message
+<body class="dark-mode">
+<nav class="navbar navbar-expand-lg navbar-dark mn-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="MovieNest home">
+            <img src="assets/logo.png" alt="MovieNest" class="mn-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="index.html?category=English#all-movies">English</a></li>
+                        <li><a class="dropdown-item" href="index.html?category=Hindi#all-movies">Hindi</a></li>
+                        <li><a class="dropdown-item" href="index.html?category=Gujarati#all-movies">Gujarati</a></li>
+                        <li><a class="dropdown-item" href="index.html?category=Marathi#all-movies">Marathi</a></li>
+                        <li><a class="dropdown-item" href="index.html?category=Hindi-Dubbed#all-movies">Hindi-Dubbed</a></li>
+                        <li><a class="dropdown-item" href="index.html?category=South#all-movies">South</a></li>
+                        <li><a class="dropdown-item" href="index.html?category=Korean#all-movies">Korean</a></li>
+                        <li><a class="dropdown-item" href="index.html?category=Telugu#all-movies">Telugu</a></li>
+                        <li><a class="dropdown-item" href="index.html?category=Tamil#all-movies">Tamil</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="fav-movies.html">Favorite Movies</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="admin.html">Admin Panel</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ms-lg-2">
+                    <button id="theme" class="btn theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+                        <img id="theme-img" src="assets/moon.png" alt="Toggle theme">
                     </button>
-
-                </form>
-
-            </div>
-
-
-            <!-- Feedback Form -->
-
-            <div class="contact-box">
-
-                <h2>Give Your Feedback</h2>
-
-                <form id="feedback-form">
-
-                    <div class="form-group">
-                        <label for="feedback-name">Name</label>
-
-                        <input type="text"
-                            id="feedback-name"
-                            class="form-input"
-                            placeholder="Enter your name"
-                            required>
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="feedback-email">Email</label>
-
-                        <input type="email"
-                            id="feedback-email"
-                            class="form-input"
-                            placeholder="Enter your email"
-                            required>
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="rating">
-                            Rating
-                        </label>
-
-                        <select id="rating"
-                            class="form-input"
-                            required>
-
-                            <option value="">
-                                Select Rating
-                            </option>
-
-                            <option value="5">
-                                ⭐⭐⭐⭐⭐ Excellent
-                            </option>
-
-                            <option value="4">
-                                ⭐⭐⭐⭐ Very Good
-                            </option>
-
-                            <option value="3">
-                                ⭐⭐⭐ Good
-                            </option>
-
-                            <option value="2">
-                                ⭐⭐ Average
-                            </option>
-
-                            <option value="1">
-                                ⭐ Poor
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="feedback-message">
-                            Feedback
-                        </label>
-
-                        <textarea
-                            id="feedback-message"
-                            class="form-input"
-                            rows="6"
-                            placeholder="Write your feedback..."
-                            required></textarea>
-
-                    </div>
-
-
-                    <button type="submit" class="form-btn">
-                        Submit Feedback
-                    </button>
-
-                </form>
-
-            </div>
-
+                </li>
+            </ul>
         </div>
-
     </div>
-
-
-    <!-- Footer -->
-
-    <footer>
-
-        <img src="assets/logo.png" alt="MovieNest">
-
-        <p>
-            MovieNest - Your ultimate destination
-            for discovering movies.
-        </p>
-
-    </footer>
-
-
+</nav>
+    <main class="container py-4 py-lg-5">
+        <div class="mb-4"><p class="section-kicker mb-1">WE WOULD LOVE TO HEAR FROM YOU</p><h1 class="h2 fw-bold">Contact MovieNest</h1><p class="text-body-secondary">Send us a message or share your feedback.</p></div>
+        <div class="row g-4">
+            <div class="col-12 col-lg-6"><section class="card border-0 shadow-sm h-100"><div class="card-body p-4"><h2 class="h4 fw-bold mb-3">Contact Us</h2>
+                <form id="contact-form">
+                    <div class="mb-3"><label for="contact-name" class="form-label">Name</label><input type="text" id="contact-name" class="form-control" placeholder="Enter your name" required></div>
+                    <div class="mb-3"><label for="contact-email" class="form-label">Email</label><input type="email" id="contact-email" class="form-control" placeholder="Enter your email" required></div>
+                    <div class="mb-3"><label for="contact-subject" class="form-label">Subject</label><input type="text" id="contact-subject" class="form-control" placeholder="Enter subject" required></div>
+                    <div class="mb-3"><label for="contact-message" class="form-label">Message</label><textarea id="contact-message" class="form-control" rows="5" placeholder="Enter your message" required></textarea></div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div></section></div>
+            <div class="col-12 col-lg-6"><section class="card border-0 shadow-sm h-100"><div class="card-body p-4"><h2 class="h4 fw-bold mb-3">Give Your Feedback</h2>
+                <form id="feedback-form">
+                    <div class="mb-3"><label for="feedback-name" class="form-label">Name</label><input type="text" id="feedback-name" class="form-control" placeholder="Enter your name" required></div>
+                    <div class="mb-3"><label for="feedback-email" class="form-label">Email</label><input type="email" id="feedback-email" class="form-control" placeholder="Enter your email" required></div>
+                    <div class="mb-3"><label for="rating" class="form-label">Rating</label><select id="rating" class="form-select" required><option value="">Select Rating</option><option value="5">⭐⭐⭐⭐⭐ Excellent</option><option value="4">⭐⭐⭐⭐ Very Good</option><option value="3">⭐⭐⭐ Good</option><option value="2">⭐⭐ Average</option><option value="1">⭐ Poor</option></select></div>
+                    <div class="mb-3"><label for="feedback-message" class="form-label">Feedback</label><textarea id="feedback-message" class="form-control" rows="5" placeholder="Write your feedback..." required></textarea></div>
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                </form>
+            </div></section></div>
+        </div>
+    </main>
+<footer class="mn-footer mt-5 py-4">
+    <div class="container text-center">
+        <img src="assets/logo.png" alt="MovieNest" class="footer-logo mb-2">
+        <p class="mb-0">© 2026 MovieNest. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="static/movie_details.js"></script>
+    <script src="static/storage.js"></script>
     <script src="static/script.js"></script>
-
 </body>
-
 </html>

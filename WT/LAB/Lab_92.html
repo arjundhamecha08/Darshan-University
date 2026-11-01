@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_92</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+        a {
+            color: orange;
+        }
+        
+        a:visited {
+            color: red;
+        }
+        #line::first-line{
+            color: grey;
+            font-style: italic;
+        }
+        #letter::first-letter{
+            font-size: 100px;
+            font-family:  sans-serif;
+            color: red;
+        }
+        #letter::selection{
+            color: green;
+        }
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        #box:hover{
+            background-color: green;
+            animation: anim 2s 0.5s 1 ease-in;
+        }
+        @keyframes anim{
+            from
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">click me</a>
+    <p id="line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Sint obcaecati sit temporibus tempora distinctio
+        excepturi placeat totam nisi a! Id, ipsum unde placeat nesciunt architecto sed minus accusantium dolor delectus.
+    </p>
+    <p id="letter">First Letter</p>
+    <div id="box"></div>
+</body>
+
+</html>

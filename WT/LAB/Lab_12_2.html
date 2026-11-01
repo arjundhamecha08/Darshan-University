@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Lab 12_2</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("Enter Number: "));
+        var flag = 0;
+
+        for(let i=2;i<num;i++){
+            if(num%i==0){
+                flag = 1;
+                break;
+            }
+        }
+
+        if(flag == 1){
+            alert("not prime number!");
+        }else{
+            alert("Prime Number!")
+        }
+        
+    </script>
+</body>
+</html>

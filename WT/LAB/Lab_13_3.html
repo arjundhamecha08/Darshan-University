@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = 5;
+        let p = document.createElement("p");
+        document.body.appendChild(p);
+        p.innerHTML += "Pattern 1: "
+        p.innerHTML += "<br>";
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=i;j++){
+                p.innerHTML += "*"
+            }
+            p.innerHTML += "<br>"
+            
+        }
+
+        p.innerHTML += "Pattern 2: "
+        p.innerHTML += "<br>";
+        for(let i=n; i>=1;i--){
+            for(let j=i;j>=1;j--){
+                p.innerHTML += "*"
+            }
+            p.innerHTML += "<br>" 
+        }
+
+         p.innerHTML += "Pattern 3: "
+        p.innerHTML += "<br>";
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=i;j++){
+                p.innerHTML += j;
+            }
+            p.innerHTML += "<br>"
+            
+        }
+
+         p.innerHTML += "Pattern 4: "
+        p.innerHTML += "<br>";
+        for(let i=n; i>=1;i--){
+            for(let j=i;j>=1;j--){
+                p.innerHTML += j;
+            }
+            p.innerHTML += "<br>" 
+        }
+
+        p.innerHTML += "Pattern 5: "
+        p.innerHTML += "<br>";
+        for(let i=1;i<=n;i++){
+            for(let j = n; j>i;j--){
+                p.innerHTML += "&nbsp&nbsp";
+            }
+            for(let j = 1;j<=i*2-1;j++){
+                p.innerHTML += "* "
+            }
+            p.innerHTML += "<br>" 
+        }
+    </script>
+</body>
+</html>

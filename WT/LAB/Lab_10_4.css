@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 50px;
+}
+#logo{
+    width: 40%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    font-size: 35px;
+    
+    
+}
+#pages{
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+#hamburger{
+    width: 10%;
+    height: 100%;
+    float: right;
+    visibility: hidden;
+}
+#icon{
+    height: 100%;
+    width: 50%;
+}
+
+@media screen and (max-width:1024px) {
+    #hamburger{
+        visibility: visible;
+    }
+    nav{
+        visibility: hidden;
+    }
+    #logo{
+        visibility: visible;
+    }
+}

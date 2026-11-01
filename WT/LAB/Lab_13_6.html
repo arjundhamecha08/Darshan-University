@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 13_6</title>
+</head>
+<body>
+    <script>
+    let num = parseInt(prompt());
+    
+    let ones = [
+        "zero","one","two",,"three","four","five","six","seven","eight","nine","ten",
+        "eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","ninghteen"
+    ];
+
+    let tens = [
+        "","","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninghty"
+    ];
+
+    function numToWord(num){
+        if(num<20){
+            return ones[num];
+        }
+
+        if(num<100){
+            return tens[Math.floor(num/10)] + ()
+        }
+    }
+    </script>
+</body>
+</html>

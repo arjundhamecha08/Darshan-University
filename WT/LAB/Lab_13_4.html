@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_13_4</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt("Enter Number 1: "));
+        let num2 = parseInt(prompt("Enter Number 2: "));
+
+        for(let i=Math.min(num1,num2);i>=1;i--){
+            if(num1%i == 0 && num2%2 == 0){
+                document.write("GCD is: "+i);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

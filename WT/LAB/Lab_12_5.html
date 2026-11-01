@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_12_5</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter Number: "));
+        let temp = num;
+        let rem;
+        let str = "";
+        while(temp != 0){
+            rem = parseInt(temp%10);
+            temp = parseInt(temp/10);
+            str += rem;
+        }
+        if(str == num){
+            console.log("Palindroma");
+        }   
+        else{
+            console.log("Not Palindroma");
+        }
+    </script>
+</body>
+</html>

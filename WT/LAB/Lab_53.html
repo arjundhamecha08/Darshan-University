@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="lab53.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="sub-div">
+            <table>
+                <div id="head">Create Account</div>
+                <hr>
+                <tr>
+                    <td class="label">First name*</td>
+                    <td class="label">Last name</td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="enter your first name"></td>
+                    <td><input type="text" placeholder="enter your last name"></td>
+                </tr>
+                <tr>
+                    <td class="label">Email*</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" style="width: 100%;" placeholder="enter your email">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Password*</td>
+                    <td class="label">Confirm Password*</td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="enter your password"></td>
+                    <td><input type="password" placeholder="enter your password again"></td>
+                </tr>
+                <tr>
+                    <td class="label">Gender:</td>
+                    <td class="label">Hobbies</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                    </td>
+                    <td><input type="checkbox">Music
+                        <input type="checkbox">Sports
+                        <input type="checkbox">Travel
+                        <input type="checkbox">Movies
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Source of income</td>
+                    <td class="label">Income</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select>
+                            <option value="Employed">Employed</option>
+                            <option value="Business">Business</option>
+                            <option value="freelancing">freelancing</option>
+                            <option value="Startup">Startup</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="range" value="0">
+                        <span>20k</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Upload Profile Picture</td>
+                    <td class="label">Age</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="file">
+                    </td>
+                    <td>
+                        <input type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="label">Bio</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea style="width: 100%;"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="create">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
